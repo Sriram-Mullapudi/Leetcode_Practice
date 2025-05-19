@@ -2,7 +2,7 @@ class Solution:
     def triangleType(self, nums: List[int]) -> str:
         a, b, c = nums
 
-       
+        # Check triangle inequality
         if a + b <= c or a + c <= b or b + c <= a:
             return "none"
 
