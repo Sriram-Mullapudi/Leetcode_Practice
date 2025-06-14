@@ -8,7 +8,7 @@ class Solution:
             replaced = num_str.replace(d, '9')
             max_val = max(max_val, int(replaced))
         
-        # Compute minimum
+
         min_val = num
         for d in '0123456789':
             replaced = num_str.replace(d, '0')
