@@ -15,5 +15,5 @@ class Solution:
                     min_num = int(num_str.replace(d, '0'))
                     break
             else:
-                min_num = num  # already minimal
+                min_num = num
         return max_num - min_num
