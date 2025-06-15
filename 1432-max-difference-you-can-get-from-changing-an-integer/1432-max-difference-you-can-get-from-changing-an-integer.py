@@ -1,8 +1,6 @@
 class Solution:
     def maxDiff(self, num: int) -> int:
         num_str = str(num)
-        
-        # For maximum value (replace first non-9 digit with 9)
         for d in num_str:
             if d != '9':
                 max_num = int(num_str.replace(d, '9'))
