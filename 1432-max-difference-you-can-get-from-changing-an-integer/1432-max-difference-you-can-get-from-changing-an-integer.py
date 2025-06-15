@@ -20,5 +20,4 @@ class Solution:
                     break
             else:
                 min_num = num  # already minimal
-        
         return max_num - min_num
