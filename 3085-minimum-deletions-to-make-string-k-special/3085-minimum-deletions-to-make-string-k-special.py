@@ -12,7 +12,7 @@ class Solution:
                 if f < target:
                     deletions += f  # delete entire group
                 elif f > target + k:
-                    deletions += f - (target + k)  # reduce to max allowed
+                    deletions += f - (target + k)
             min_del = min(min_del, deletions)
         
         return min_del
