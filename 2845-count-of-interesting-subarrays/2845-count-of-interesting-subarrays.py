@@ -12,8 +12,6 @@ class Solution:
             # Count how many nums so far have nums[i] % modulo == k
             if num % modulo == k:
                 prefix += 1
-            
-            # We want: (prefix - target) % modulo == 0 → target = (prefix - k) % modulo
             target = (prefix - k) % modulo
             res += count[target]
             count[prefix % modulo] += 1
