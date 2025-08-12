@@ -2,7 +2,6 @@ class Solution {
     private static final int MOD = 1_000_000_007;
 
     public int numberOfWays(int n, int x) {
-        // Precompute powers i^x <= n
         int[] powers = buildPowers(n, x);
 
         int[] dp = new int[n + 1];
@@ -24,13 +23,11 @@ class Solution {
             if (p > n) break;
             list.add((int) p);
         }
-        // Convert to array for faster loop
         int[] arr = new int[list.size()];
         for (int i = 0; i < arr.length; i++) arr[i] = list.get(i);
         return arr;
     }
 
-    // Integer power (x ≤ 5, n ≤ 300 ⇒ safe)
     private long ipow(int a, int b) {
         long res = 1, x = a;
         while (b > 0) {
